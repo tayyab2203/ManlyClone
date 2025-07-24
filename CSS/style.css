@@ -1,0 +1,290 @@
+body {
+  font-family: 'Archive', 'Muilshe', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.3rem;
+}
+
+
+
+/* ===== Sidebar Component ===== */
+
+.cursor-pointer { cursor: pointer; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem;
+  z-index: 2000;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar a,
+.sidebar button.sidebar-toggle {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.sidebar a:hover,
+.sidebar a:focus,
+.sidebar button.sidebar-toggle:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar-close {
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.sidebar .social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar .social-icons a {
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.submenu a {
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.sidebar-toggle .toggle-icon {
+  float: right;
+  font-weight: bold;
+}
+
+/* Active submenu */
+.sidebar-toggle.active + .submenu {
+  display: block;
+}
+
+.sidebar-footer {
+  margin-top: 3rem;
+}
+
+.sidebar-footer a {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.sidebar-footer a:hover {
+  color: #000;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1999;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav.d-md-flex {
+    display: none !important;
+  }
+  .sidebar {
+    width: 80%;
+    max-width: 280px;
+  }
+}
+
+
+
+/* Hero  */
+
+.hero-grid-section .featured-article {
+  position: relative;
+  /* border-radius: 0.5rem; */
+  overflow: hidden;
+}
+.hero-grid-section .featured-article img {
+  display: block;
+}
+.hero-grid-section .featured-article .featured-text {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0.1rem;
+  right: 1.5rem;
+  /* border-radius: 0.5rem; */
+}
+.hero-grid-section .featured-text h2 {
+  font-size: 1.75rem;
+}
+.hero-grid-section .article-card img {
+  display: block;
+}
+.hero-grid-section .article-card .badge {
+  font-size: 0.75rem;
+}
+.hero-grid-section .article-card h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.article-card {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 0.5rem; */
+}
+
+.article-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* border-radius: 0.5rem; */
+}
+
+/* Text overlay */
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  padding: 1rem;
+  color: #F7F7F7;
+  font-weight: 900;
+  /* border-bottom-left-radius: 0.5rem; */
+  /* border-bottom-right-radius: 0.5rem; */
+}
+
+
+/* News  */
+.latest-articles{
+    background-color:#f8f9fa; ;
+}
+.latest-articles .article-card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+
+
+.latest-articles .overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  color: #fff;
+}
+
+/* Financial Matters Section */
+
+.financial-matters h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 900;
+}
+
+
+
+
+/* TECH SECTION STYLES */
+.tech-section {
+  background-color: #f8f9fa;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.tech-section h2 {
+  color: #3754A3;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.tech-card {
+  position: relative;
+  height: 188px;
+  overflow: hidden;
+}
+
+.tech-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tech-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.tech-card .overlay p {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.tech-card-large {
+  height: 376px;
+}
+
