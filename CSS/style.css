@@ -1,8 +1,9 @@
 body {
-  font-family: 'Archive', 'Muilshe', sans-serif;
+  font-family: "Archive", "Muilshe", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  padding-top: 80px; /* Adjust if your header is taller */
 }
 
 .nav-link {
@@ -12,7 +13,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #000;
+  color: rgb(59, 59, 241);
 }
 
 .dropdown-toggle::after {
@@ -21,9 +22,9 @@ body {
 
 
 
-/* ===== Sidebar Component ===== */
-
-.cursor-pointer { cursor: pointer; }
+.cursor-pointer {
+  cursor: pointer;
+}
 
 .sidebar {
   position: fixed;
@@ -92,7 +93,6 @@ body {
   margin-bottom: 1rem;
 }
 
-
 .submenu a {
   font-weight: 400;
   font-size: 0.95rem;
@@ -126,7 +126,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   z-index: 1999;
@@ -147,8 +147,6 @@ body {
     max-width: 280px;
   }
 }
-
-
 
 /* Hero  */
 
@@ -181,7 +179,6 @@ body {
   margin: 0;
 }
 
-
 .article-card {
   position: relative;
   overflow: hidden;
@@ -203,16 +200,15 @@ body {
   right: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
   padding: 1rem;
-  color: #F7F7F7;
+  color: #f7f7f7;
   font-weight: 900;
   /* border-bottom-left-radius: 0.5rem; */
   /* border-bottom-right-radius: 0.5rem; */
 }
 
-
 /* News  */
-.latest-articles{
-    background-color:#f8f9fa; ;
+.latest-articles {
+  background-color: #f8f9fa;
 }
 .latest-articles .article-card {
   border-radius: 10px;
@@ -220,8 +216,6 @@ body {
   position: relative;
   cursor: pointer;
 }
-
-
 
 .latest-articles .overlay-content {
   position: absolute;
@@ -240,9 +234,6 @@ body {
   font-weight: 900;
 }
 
-
-
-
 /* TECH SECTION STYLES */
 .tech-section {
   background-color: #f8f9fa;
@@ -251,7 +242,7 @@ body {
 }
 
 .tech-section h2 {
-  color: #3754A3;
+  color: #3754a3;
   font-style: italic;
   font-weight: bold;
   margin-bottom: 1.5rem;
@@ -288,3 +279,66 @@ body {
   height: 376px;
 }
 
+
+
+
+
+
+.header-section {
+  background-color: #f2f2f2;
+  padding: 2rem 0;
+}
+
+.section-title {
+  font-family: "Mulish", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #000;
+}
+
+.article-entry {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.article-entry img {
+  width: 100px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.article-meta {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #1d3c89;
+}
+
+.article-date {
+  font-weight: normal;
+  color: #555;
+}
+
+.article-title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .desktop-grid .article-entry {
+    display: block;
+  }
+
+  .desktop-grid .article-entry img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
