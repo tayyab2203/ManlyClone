@@ -15,6 +15,10 @@ body {
 .nav-link:hover {
   color: rgb(59, 59, 241);
 }
+.custom-nav-gap {
+  gap: 64px;
+}
+
 
 .dropdown-toggle::after {
   margin-left: 0.3rem;
@@ -342,3 +346,46 @@ body {
     margin-bottom: 10px;
   }
 }
+
+
+.custom-label {
+        display: inline-block;
+        position: relative;
+        top: -50px;
+        left: -8px;
+        background-color: #EBEBEB;
+        color: #4665BC;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 2px 8px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+        font-style: italic; /* optional, matches your screenshot */
+        transition: padding 0.3s ease, background-color 0.3s ease;
+      }
+
+      /* Hide on screens smaller than 768px */
+      @media (max-width: 767px) {
+        .custom-label {
+          display: none !important;
+        }
+      }
+
+      .custom-label:hover {
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: rgba(230, 230, 230, 0.95);
+      }
+
+      /* Hide on desktop by default */
+      .article-meta {
+        display: none;
+      }
+
+      /* Show only on mobile (≤767px) */
+      @media (max-width: 767px) {
+        .article-meta {
+          display: block;
+        }
+      }
