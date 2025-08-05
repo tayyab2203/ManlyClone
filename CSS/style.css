@@ -6,7 +6,6 @@ body {
   padding-top: 80px; /* Adjust if your header is taller */
 }
 
-
 @media (max-width: 767.98px) {
   header .container {
     padding-top: 1.5rem !important; /* less than py-3 */
@@ -27,8 +26,6 @@ body {
   }
 }
 
-
-
 .nav-link {
   font-size: 18px;
   font-weight: 700;
@@ -46,12 +43,12 @@ body {
 .dropdown-toggle::after {
   margin-left: 0.3rem;
 }
-.dropdown-item{
+.dropdown-item {
   font-weight: 600;
   color: #000;
 }
-.dropdown-item:hover{
-   color: rgb(59, 59, 241);
+.dropdown-item:hover {
+  color: rgb(59, 59, 241);
 }
 
 .cursor-pointer {
@@ -152,6 +149,11 @@ body {
 .sidebar-footer a:hover {
   color: #000;
 }
+
+img.footer-logo {
+  filter: brightness(0) invert(1);
+}
+
 
 /* Overlay */
 .overlay {
@@ -312,7 +314,6 @@ body {
 }
 
 .header-section {
-  
   background-color: #f2f2f2;
   padding: 3rem 0;
   margin-top: 23px !important;
@@ -376,6 +377,51 @@ body {
   }
 }
 
+.featured-label {
+  display: inline-block;
+  position: absolute;
+  bottom: 85px;
+  left: 18px;
+  background-color: #ebebeb;
+  color: #4665bc;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 2px 8px;
+  /* border-radius: 3px; */
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  font-style: italic;
+  z-index: 3;
+  transition: padding 0.3s ease, background-color 0.3s ease;
+}
+.featured-label:hover {
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: rgba(230, 230, 230, 0.95);
+}
+.featured-label-sm {
+  display: inline-block;
+  position: absolute;
+  bottom: 65px;
+  left: 13px;
+  background-color: #ebebeb;
+  color: #4665bc;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 2px 8px;
+  /* border-radius: 3px; */
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  font-style: italic;
+  z-index: 3;
+  transition: padding 0.3s ease, background-color 0.3s ease;
+}
+.featured-label-sm:hover {
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: rgba(230, 230, 230, 0.95);
+}
+
 .custom-label {
   display: inline-block;
   position: relative;
@@ -418,9 +464,7 @@ body {
   }
 }
 
-
 /* Style for pagination */
-
 
 .custom-pagination .page-item {
   margin: 0;
@@ -445,7 +489,6 @@ body {
   color: #000000; /* black */
   font-weight: bold;
 }
-
 
 /* Show dropdown on hover for large screens only */
 @media (min-width: 992px) {
