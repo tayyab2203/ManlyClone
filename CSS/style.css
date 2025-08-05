@@ -24,6 +24,13 @@ body {
 .dropdown-toggle::after {
   margin-left: 0.3rem;
 }
+.dropdown-item{
+  font-weight: 600;
+  color: #000;
+}
+.dropdown-item:hover{
+   color: rgb(59, 59, 241);
+}
 
 .cursor-pointer {
   cursor: pointer;
@@ -147,7 +154,7 @@ body {
   }
   .sidebar {
     width: 80%;
-    max-width: 280px;
+    max-width: 300px;
   }
 }
 
@@ -386,5 +393,62 @@ body {
 @media (max-width: 767px) {
   .article-meta {
     display: block;
+  }
+}
+
+
+/* Style for pagination */
+
+
+.custom-pagination .page-item {
+  margin: 0;
+}
+
+.custom-pagination .page-link {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  font-weight: bold;
+  color: #1a0dab; /* blue */
+  background-color: #f9f9f9; /* light background */
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.custom-pagination .page-item.active .page-link {
+  background-color: #ffffff;
+  color: #000000; /* black */
+  font-weight: bold;
+}
+
+
+/* Show dropdown on hover for large screens only */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    margin-top: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+}
+
+/* Rotate animation for arrow on hover */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover svg {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-item.dropdown svg {
+    transition: transform 0.3s ease;
   }
 }

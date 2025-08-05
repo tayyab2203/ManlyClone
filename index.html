@@ -19,8 +19,10 @@
     />
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Mulish&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo&family=Mulish&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
@@ -52,14 +54,21 @@
             <a class="nav-link" href="../FinancialMatters/financialMatter.html">
               Financial matters
             </a>
-            <a
-              class="nav-link dropdown-toggle dropdown-toggle-split"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <span class="visually-hidden">Toggle Dropdown</span>
+            <a class="nav-link d-flex align-items-center ps-1 pe-2" href="#">
+              <svg
+                class="inline-block"
+                style="width: 1.5rem; height: 1.5rem"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
             </a>
             <ul class="dropdown-menu">
               <li>
@@ -92,23 +101,26 @@
 
           <!-- Dropdown: Tech -->
           <li class="nav-item dropdown d-flex">
-            <a class="nav-link" href="./Tech/tech.html">
-              Tech
-            </a>
-            <a
-              class="nav-link dropdown-toggle dropdown-toggle-split"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <span class="visually-hidden">Toggle Dropdown</span>
+            <a class="nav-link" href="./Tech/tech.html"> Tech </a>
+            <a class="nav-link d-flex align-items-center ps-1 pe-2" href="#">
+              <svg
+                class="inline-block"
+                style="width: 1.5rem; height: 1.5rem"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="./Tech/ebikes.html">
-                  E-bikes
-                </a>
+                <a class="dropdown-item" href="./Tech/ebikes.html"> E-bikes </a>
               </li>
               <li>
                 <a class="dropdown-item" href="./Tech/gear.html">
@@ -119,27 +131,39 @@
           </li>
 
           <!-- Dropdown: Film & Series -->
-          <div class="dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
-            >
+          <li class="nav-item dropdown d-flex">
+            <a class="nav-link" href="./Film&Series/film.html">
               Film & Series
+            </a>
+            <a class="nav-link d-flex align-items-center ps-1 pe-2" href="#">
+              <svg
+                class="inline-block"
+                style="width: 1.5rem; height: 1.5rem"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="./Film&Series/netflix.html"
-                  >Netflix</a
-                >
+                <a class="dropdown-item" href="./Film&Series/netflix.html">
+                  Netflix
+                </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./Film&Series/videoland.html"
-                  >Videoland</a
-                >
+                <a class="dropdown-item" href="./Film&Series/videoland.html">
+                  Videoland
+                </a>
               </li>
             </ul>
-          </div>
+          </li>
 
           <!-- Simple Links -->
           <a class="nav-link" href="./health.html">Health</a>
@@ -446,103 +470,109 @@
     <section class="latest-articles py-5">
       <div class="container">
         <h2 class="section-title mb-4">New Articles</h2>
-        <div class="row g-4">
-          <!-- Article Card 1 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="article-card position-relative">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 desktop-grid">
+          <div class="col">
+            <div class="article-entry">
               <img
-                src="./images/img_1.webp"
-                class="img-fluid w-100"
-                alt="Finance"
+                src="../images/financialMatter/financial7.webp"
+                alt="E-bike tire"
               />
-              <div class="overlay-content p-3">
-                <span class="badge bg-primary">Financial matters</span>
-                <h5 class="mt-2 text-white">
-                  How to Make Your Money Work Harder in 2025
-                </h5>
+              <span class="custom-label">SALARY & WEALTH</span>
+              <div>
+                <div class="article-meta">
+                  SAVE <span class="article-date">· yesterday</span>
+                </div>
+                <div class="article-title">
+                  Worn e-bike tires? Here's how to tell if they need replacing.
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Article Card 2 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="article-card position-relative">
+          <div class="col">
+            <div class="article-entry">
               <img
-                src="./images/img_1.webp"
-                class="img-fluid w-100"
-                alt="Tech"
+                src="../images/financialMatter/financial8.webp"
+                alt="E-bike tire"
               />
-              <div class="overlay-content p-3">
-                <span class="badge bg-primary">Tech</span>
-                <h5 class="mt-2 text-white">Top 5 Gadgets for Men This Year</h5>
+              <span class="custom-label">SAVE</span>
+              <div>
+                <div class="article-meta">
+                  SAVE <span class="article-date">· yesterday</span>
+                </div>
+                <div class="article-title">
+                  Worn e-bike tires? Here's how to tell if they need replacing.
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Article Card 3 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="article-card position-relative">
+          <div class="col">
+            <div class="article-entry">
               <img
-                src="./images/img_1.webp"
-                class="img-fluid w-100"
-                alt="Film & Series"
+                src="../images/financialMatter/financial9.webp"
+                alt="E-bike tire"
               />
-              <div class="overlay-content p-3">
-                <span class="badge bg-primary">Film & Series</span>
-                <h5 class="mt-2 text-white">
-                  Netflix Picks That Actually Deliver
-                </h5>
+              <span class="custom-label">HEALTH</span>
+              <div>
+                <div class="article-meta">
+                  SAVE <span class="article-date">· yesterday</span>
+                </div>
+                <div class="article-title">
+                  Worn e-bike tires? Here's how to tell if they need replacing.
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Article Card 4 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="article-card position-relative">
+          <div class="col">
+            <div class="article-entry">
               <img
-                src="./images/img_1.webp"
-                class="img-fluid w-100"
-                alt="Health"
+                src="../images/financialMatter/finalcial1.webp"
+                alt="E-bike tire"
               />
-              <div class="overlay-content p-3">
-                <span class="badge bg-primary">Health</span>
-                <h5 class="mt-2 text-white">
-                  Morning Habits That Actually Work
-                </h5>
+              <span class="custom-label">TECH</span>
+              <div>
+                <div class="article-meta">
+                  SAVE <span class="article-date">· yesterday</span>
+                </div>
+                <div class="article-title">
+                  Worn e-bike tires? Here's how to tell if they need replacing.
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Article Card 5 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="article-card position-relative">
+          <div class="col">
+            <div class="article-entry">
               <img
-                src="./images/img_3.webp"
-                class="img-fluid w-100"
-                alt="Style"
+                src="../images/financialMatter/finalcial2.webp"
+                alt="E-bike tire"
               />
-              <div class="overlay-content p-3">
-                <span class="badge bg-primary">Style</span>
-                <h5 class="mt-2 text-white">
-                  Timeless Wardrobe Pieces for Men
-                </h5>
+              <span class="custom-label">FINANCIAL MATTER</span>
+              <div>
+                <div class="article-meta">
+                  SAVE <span class="article-date">· yesterday</span>
+                </div>
+                <div class="article-title">
+                  Worn e-bike tires? Here's how to tell if they need replacing.
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Article Card 6 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="article-card position-relative">
+          <div class="col">
+            <div class="article-entry">
               <img
-                src="./images/img_2webp.webp"
-                class="img-fluid w-100"
-                alt="Saving"
+                src="../images/financialMatter/financial3.webp"
+                alt="E-bike tire"
               />
-              <div class="overlay-content p-3">
-                <span class="badge bg-primary">Financial matters</span>
-                <h5 class="mt-2 text-white">
-                  Simple Ways to Save Without Sacrificing
-                </h5>
+              <span class="custom-label">NETFLIX</span>
+              <div>
+                <div class="article-meta">
+                  SAVE <span class="article-date">· yesterday</span>
+                </div>
+                <div class="article-title">
+                  Worn e-bike tires? Here's how to tell if they need replacing.
+                </div>
               </div>
             </div>
           </div>
@@ -551,193 +581,633 @@
     </section>
 
     <!-- Financial Matter -->
-    <section class="financial-matters py-5 bg-white">
-      <div class="container">
-        <h2 class="mb-4 fw-bold" style="color: #3754a3; font-style: italic">
-          Financial matters
+    <section class="film-series-section py-5 bg-white">
+      <div class="container-xl">
+        <!-- Section Heading -->
+        <h2
+          class="fw-bold fst-italic mb-4"
+          style="color: #3754a3; font-size: 2rem"
+        >
+          Financial matter
         </h2>
 
-        <!-- Main Article Row -->
-        <div class="row mb-4 align-items-center">
-          <div class="col-md-6">
+        <!-- Desktop Hero Section -->
+        <div class="d-none d-lg-flex mb-4" style="height: 520px">
+          <!-- Fixed Image Column -->
+          <div class="me-4" style="flex: 0 0 auto; width: 855px">
             <img
-              src="./images/img_1.webp"
-              alt="Money"
-              class="img-fluid w-100"
+              src="./images/img_3.webp"
+              class="img-fluid h-100 w-100"
+              style="object-fit: cover"
+              alt="Hero Image"
             />
           </div>
+
+          <!-- Text Column -->
           <div
-            class="col-md-6"
-            style="
-              border-top: 1.5px solid black;
-              border-bottom: 1.5px solid black;
-            "
+            class="flex-grow-1 border-top border-bottom border-dark d-flex flex-column justify-content-center"
+            style="height: 100%"
           >
-            <span class="fw-semibold" style="color: #3754a3">
-              Tax & Allowances • yesterday
-            </span>
-            <h3 class="fw-bold mt-2" style="color: black">
-              Your child’s first home: this is how much you can give tax-free in
-              one go
-            </h3>
+            <ul
+              class="list-unstyled d-flex flex-wrap align-items-center text-muted mb-2"
+            >
+              <li class="me-2">
+                <a
+                  href="#"
+                  class="fw-semibold text-decoration-none"
+                  style="color: #3754a3"
+                  >Netflix</a
+                >
+              </li>
+              <li class="mx-2">•</li>
+              <li>
+                <time class="text-muted">August 1, 2025</time>
+              </li>
+            </ul>
+            <h2 class="fw-bold mb-0" style="color: black; font-size: 2.5rem">
+              <a href="#" class="text-decoration-none text-dark">
+                Reggae legend Bob <br />
+                Marley to star in <br />
+                intimate biopic on <br />
+                Netflix soon
+              </a>
+            </h2>
           </div>
         </div>
 
-        <!-- Three Sub-Articles -->
-        <div class="row g-4">
-          <div class="col-md-4">
-            <img
-              src="./images/img_2webp.webp"
-              alt="Home"
-              class="img-fluid"
-              style="height: 180px; object-fit: cover"
-            />
-            <p class="mt-2">
-              You can buy these beautiful holiday homes for less than €200,000
-            </p>
-          </div>
-
-          <div class="col-md-4">
+        <!-- Mobile Hero Section -->
+        <div class="d-block d-lg-none mb-4">
+          <div class="position-relative" style="aspect-ratio: 16/9">
             <img
               src="./images/img_3.webp"
-              alt="Cash"
-              class="img-fluid"
-              style="height: 180px; object-fit: cover"
+              class="position-absolute w-100 h-100 object-fit-cover"
+              alt="Hero Image"
             />
-            <p class="mt-2">
-              Deposit cash: the government monitors this amount
-            </p>
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-3"
+              style="background: rgba(0, 0, 0, 0.2)"
+            >
+              <h2 class="text-white mb-0 fs-5 fw-bold">
+                <a href="#" class="text-white text-decoration-none">
+                  Reggae legend Bob Marley to star in intimate biopic on Netflix
+                  soon
+                </a>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Posts Grid (unchanged) -->
+        <div class="row g-4">
+          <!-- Post 1 -->
+          <div class="col-12 col-md-4">
+            <!-- Mobile: Horizontal layout -->
+            <div class="d-block d-md-none">
+              <div class="d-flex">
+                <img
+                  src="./images/img_1.webp"
+                  alt="Post 1"
+                  class="img-fluid"
+                  style="
+                    width: 171px;
+                    height: 112px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                  "
+                />
+                <div>
+                  <p
+                    class="fw-semibold mb-1"
+                    style="color: #3754a3; font-size: 0.85rem"
+                  >
+                    Film & Series
+                  </p>
+                  <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                    Horror film 'Weapons' scores top rating on Rotten Tomatoes
+                    after clever marketing
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop: Stacked layout -->
+            <div class="d-none d-md-block">
+              <img
+                src="./images/img_1.webp"
+                class="img-fluid w-100 mb-2"
+                style="height: 200px; object-fit: cover"
+                alt="Post 1"
+              />
+              <h5 class="fw-semibold mb-0" style="font-size: 1rem">
+                <a href="#" class="text-decoration-none text-dark">
+                  Horror film 'Weapons' scores top rating on Rotten Tomatoes
+                  after clever marketing
+                </a>
+              </h5>
+            </div>
           </div>
 
-          <div class="col-md-4">
-            <img
-              src="./images/img_1.webp"
-              alt="Jobs"
-              class="img-fluid"
-              style="height: 180px; object-fit: cover"
-            />
-            <p class="mt-2">
-              Where do you earn the most: McDonald's, KFC, Burger King, or
-              Subway?
-            </p>
+          <!-- Post 2 -->
+          <div class="col-12 col-md-4">
+            <!-- Mobile: Horizontal layout -->
+            <div class="d-block d-md-none">
+              <div class="d-flex">
+                <img
+                  src="./images/img_3.webp"
+                  alt="Post 2"
+                  class="img-fluid"
+                  style="
+                    width: 171px;
+                    height: 112px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                  "
+                />
+                <div>
+                  <p
+                    class="fw-semibold mb-1"
+                    style="color: #3754a3; font-size: 0.85rem"
+                  >
+                    Film & Series
+                  </p>
+                  <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                    Ferry to Riphagen: these Dutch films and series on Netflix
+                    are worth watching
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop: Stacked layout -->
+            <div class="d-none d-md-block">
+              <img
+                src="./images/img_3.webp"
+                class="img-fluid w-100 mb-2"
+                style="height: 200px; object-fit: cover"
+                alt="Post 2"
+              />
+              <h5 class="fw-semibold mb-0" style="font-size: 1rem">
+                <a href="#" class="text-decoration-none text-dark">
+                  Ferry to Riphagen: these Dutch films and series on Netflix are
+                  worth watching
+                </a>
+              </h5>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="col-12 col-md-4">
+            <!-- Mobile: Horizontal layout -->
+            <div class="d-block d-md-none">
+              <div class="d-flex">
+                <img
+                  src="./images/img_2webp.webp"
+                  alt="Post 3"
+                  class="img-fluid"
+                  style="
+                    width: 171px;
+                    height: 112px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                  "
+                />
+                <div>
+                  <p
+                    class="fw-semibold mb-1"
+                    style="color: #3754a3; font-size: 0.85rem"
+                  >
+                    Film & Series
+                  </p>
+                  <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                    Netflix drops promising footage of Frankenstein with Oscar
+                    winner
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop: Stacked layout -->
+            <div class="d-none d-md-block">
+              <img
+                src="./images/img_2webp.webp"
+                class="img-fluid w-100 mb-2"
+                style="height: 200px; object-fit: cover"
+                alt="Post 3"
+              />
+              <h5 class="fw-semibold mb-0" style="font-size: 1rem">
+                <a href="#" class="text-decoration-none text-dark">
+                  Netflix drops promising footage of Frankenstein with Oscar
+                  winner
+                </a>
+              </h5>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Tech Section -->
-    <section class="tech-section">
-      <div class="container">
-        <h2 class="mb-4">Tech</h2>
+    <section class="tech-section py-5 bg-light">
+      <div class="container-xl">
+        <!-- Heading -->
+        <h2
+          class="fw-bold fst-italic mb-4"
+          style="color: #3754a3; font-size: 2rem"
+        >
+          Tech
+        </h2>
 
-        <div class="row g-4">
-          <!-- Left column: 2 stacked images with overlay text -->
+        <!-- Desktop Grid -->
+        <div class="row d-none d-md-flex">
+          <!-- Left Column (2 stacked) -->
           <div class="col-md-6 d-flex flex-column gap-4">
-            <!-- Card 1 -->
-            <div class="tech-card">
-              <img src="./images/tech_1.webp" alt="e-bike" />
-              <div class="overlay">
-                <p>
-                  Worn e-bike tires? Here's how to tell if they need replacing.
-                </p>
+            <!-- Article 1 -->
+            <div class="position-relative" style="height: 250px">
+              <img
+                src="./images/h&f_1.webp"
+                class="img-fluid w-100 h-100"
+                style="object-fit: cover"
+                alt="Tech 1"
+              />
+              <div
+                class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="background: rgba(0, 0, 0, 0.4)"
+              >
+                <h5 class="text-white fw-bold m-0">
+                  Action's popular kamado BBQ is much cheaper than the expensive
+                  brand version
+                </h5>
               </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="tech-card">
-              <img src="./images/tech_2.webp" alt="AI" />
-              <div class="overlay">
-                <p>Opinion: AI is a potentially major danger to humanity</p>
+            <!-- Article 2 -->
+            <div class="position-relative" style="height: 250px">
+              <img
+                src="./images/h&f_2.webp"
+                class="img-fluid w-100 h-100"
+                style="object-fit: cover"
+                alt="Tech 2"
+              />
+              <div
+                class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="background: rgba(0, 0, 0, 0.4)"
+              >
+                <h5 class="text-white fw-bold m-0">
+                  Action's wireless earphones are a lasting hit and cost next to
+                  nothing
+                </h5>
               </div>
             </div>
           </div>
 
-          <!-- Right column: Single large image with overlay -->
+          <!-- Right Column (1 tall article) -->
           <div class="col-md-6">
-            <div class="tech-card tech-card-large">
-              <img src="./images/tech_3.webp" alt="Wireless Earphones" />
-              <div class="overlay">
-                <p>
-                  Action's wireless earphones are a lasting hit and cost next to
-                  nothing
-                </p>
+            <div class="position-relative" style="height: 520px">
+              <img
+                src="./images/h&f_3.webp"
+                class="img-fluid w-100 h-100"
+                style="object-fit: cover"
+                alt="Tech 3"
+              />
+              <div
+                class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="background: rgba(0, 0, 0, 0.4)"
+              >
+                <h5 class="text-white fw-bold m-0">
+                  LEGO is now selling an iconic Nintendo Game Boy for a bargain
+                  price
+                </h5>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="d-block d-md-none">
+          <!-- Hero Article (Full Width) -->
+          <div class="mb-4 position-relative" style="aspect-ratio: 16/9">
+            <img
+              src="./images/h&f_3.webp"
+              class="img-fluid position-absolute w-100 h-100"
+              style="object-fit: cover"
+              alt="Hero Tech"
+            />
+            <div
+              class="position-absolute bottom-0 start-0 w-100 p-3"
+              style="background: rgba(0, 0, 0, 0.4)"
+            >
+              <h5 class="text-white fw-bold m-0">
+                LEGO is now selling an iconic Nintendo Game Boy for a bargain
+                price
+              </h5>
+            </div>
+          </div>
+
+          <!-- Article 1 -->
+          <div class="d-flex mb-3">
+            <img
+              src="./images/h&f_1.webp"
+              class="img-fluid"
+              style="
+                width: 150px;
+                height: 100px;
+                object-fit: cover;
+                margin-right: 15px;
+              "
+              alt="Tech 1"
+            />
+            <div class="d-flex flex-column justify-content-center">
+              <p
+                class="fw-semibold mb-1"
+                style="color: #3754a3; font-size: 0.85rem"
+              >
+                Tech
+              </p>
+              <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                Action's popular kamado BBQ is much cheaper than the expensive
+                brand version
+              </p>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="d-flex mb-3">
+            <img
+              src="./images/h&f_2.webp"
+              class="img-fluid"
+              style="
+                width: 150px;
+                height: 100px;
+                object-fit: cover;
+                margin-right: 15px;
+              "
+              alt="Tech 2"
+            />
+            <div class="d-flex flex-column justify-content-center">
+              <p
+                class="fw-semibold mb-1"
+                style="color: #3754a3; font-size: 0.85rem"
+              >
+                Tech
+              </p>
+              <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                Action's wireless earphones are a lasting hit and cost next to
+                nothing
+              </p>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+           <div class="d-flex mb-3">
+            <img
+              src="./images/h&f_2.webp"
+              class="img-fluid"
+              style="
+                width: 150px;
+                height: 100px;
+                object-fit: cover;
+                margin-right: 15px;
+              "
+              alt="Tech 2"
+            />
+            <div class="d-flex flex-column justify-content-center">
+              <p
+                class="fw-semibold mb-1"
+                style="color: #3754a3; font-size: 0.85rem"
+              >
+                Tech
+              </p>
+              <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                Action's wireless earphones are a lasting hit and cost next to
+                nothing
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Film And Series -->
+    <!-- Film & Series Section -->
     <section class="film-series-section py-5 bg-white">
-      <div class="container">
-        <h2 class="mb-4 fw-bold" style="color: #3754a3; font-style: italic">
+      <div class="container-xl">
+        <!-- Section Heading -->
+        <h2
+          class="fw-bold fst-italic mb-4"
+          style="color: #3754a3; font-size: 2rem"
+        >
           Film & Series
         </h2>
 
-        <!-- Main Article Row -->
-        <div class="row mb-4 align-items-center">
-          <div class="col-md-6">
+        <!-- Desktop Hero Section -->
+        <div class="d-none d-lg-flex mb-4" style="height: 520px">
+          <!-- Fixed Image Column -->
+          <div class="me-4" style="flex: 0 0 auto; width: 855px">
             <img
               src="./images/img_3.webp"
-              alt="Main Film"
-              class="img-fluid w-100"
+              class="img-fluid h-100 w-100"
+              style="object-fit: cover"
+              alt="Hero Image"
             />
           </div>
+
+          <!-- Text Column -->
           <div
-            class="col-md-6"
-            style="
-              border-top: 1.5px solid black;
-              border-bottom: 1.5px solid black;
-            "
+            class="flex-grow-1 border-top border-bottom border-dark d-flex flex-column justify-content-center"
+            style="height: 100%"
           >
-            <span class="fw-semibold" style="color: #3754a3">
-              Film & Series • July 14, 2025
-            </span>
-            <h3 class="fw-bold mt-2" style="color: black">
-              These are the 100 best films of the 21st century,<br />
-              according to the greatest film experts
-            </h3>
+            <ul
+              class="list-unstyled d-flex flex-wrap align-items-center text-muted mb-2"
+            >
+              <li class="me-2">
+                <a
+                  href="#"
+                  class="fw-semibold text-decoration-none"
+                  style="color: #3754a3"
+                  >Netflix</a
+                >
+              </li>
+              <li class="mx-2">•</li>
+              <li>
+                <time class="text-muted">August 1, 2025</time>
+              </li>
+            </ul>
+            <h2 class="fw-bold mb-0" style="color: black; font-size: 2.5rem">
+              <a href="#" class="text-decoration-none text-dark">
+                Reggae legend Bob <br />
+                Marley to star in <br />
+                intimate biopic on <br />
+                Netflix soon
+              </a>
+            </h2>
           </div>
         </div>
 
-        <!-- Three Sub-Articles -->
-        <div class="row g-4">
-          <div class="col-md-4">
-            <img
-              src="./images/img_1.webp"
-              alt="Sub Article 1"
-              class="img-fluid"
-              style="height: 180px; object-fit: cover"
-            />
-            <p class="mt-2">
-              This is how much a night costs at Jean-Paul's B&B Vol Liefde
-            </p>
-          </div>
-
-          <div class="col-md-4">
+        <!-- Mobile Hero Section -->
+        <div class="d-block d-lg-none mb-4">
+          <div class="position-relative" style="aspect-ratio: 16/9">
             <img
               src="./images/img_3.webp"
-              alt="Sub Article 2"
-              class="img-fluid"
-              style="height: 180px; object-fit: cover"
+              class="position-absolute w-100 h-100 object-fit-cover"
+              alt="Hero Image"
             />
-            <p class="mt-2">
-              3 amazing war movies on HBO with high IMDb scores
-            </p>
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-3"
+              style="background: rgba(0, 0, 0, 0.2)"
+            >
+              <h2 class="text-white mb-0 fs-5 fw-bold">
+                <a href="#" class="text-white text-decoration-none">
+                  Reggae legend Bob Marley to star in intimate biopic on Netflix
+                  soon
+                </a>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Posts Grid (unchanged) -->
+        <div class="row g-4">
+          <!-- Post 1 -->
+          <div class="col-12 col-md-4">
+            <!-- Mobile: Horizontal layout -->
+            <div class="d-block d-md-none">
+              <div class="d-flex">
+                <img
+                  src="./images/img_1.webp"
+                  alt="Post 1"
+                  class="img-fluid"
+                  style="
+                    width: 171px;
+                    height: 112px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                  "
+                />
+                <div>
+                  <p
+                    class="fw-semibold mb-1"
+                    style="color: #3754a3; font-size: 0.85rem"
+                  >
+                    Film & Series
+                  </p>
+                  <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                    Horror film 'Weapons' scores top rating on Rotten Tomatoes
+                    after clever marketing
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop: Stacked layout -->
+            <div class="d-none d-md-block">
+              <img
+                src="./images/img_1.webp"
+                class="img-fluid w-100 mb-2"
+                style="height: 200px; object-fit: cover"
+                alt="Post 1"
+              />
+              <h5 class="fw-semibold mb-0" style="font-size: 1rem">
+                <a href="#" class="text-decoration-none text-dark">
+                  Horror film 'Weapons' scores top rating on Rotten Tomatoes
+                  after clever marketing
+                </a>
+              </h5>
+            </div>
           </div>
 
-          <div class="col-md-4">
-            <img
-              src="./images/img_2webp.webp"
-              alt="Sub Article 3"
-              class="img-fluid"
-              style="height: 180px; object-fit: cover"
-            />
-            <p class="mt-2">
-              Last chance: 3 rock-solid films from the 90s are disappearing from
-              Netflix
-            </p>
+          <!-- Post 2 -->
+          <div class="col-12 col-md-4">
+            <!-- Mobile: Horizontal layout -->
+            <div class="d-block d-md-none">
+              <div class="d-flex">
+                <img
+                  src="./images/img_3.webp"
+                  alt="Post 2"
+                  class="img-fluid"
+                  style="
+                    width: 171px;
+                    height: 112px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                  "
+                />
+                <div>
+                  <p
+                    class="fw-semibold mb-1"
+                    style="color: #3754a3; font-size: 0.85rem"
+                  >
+                    Film & Series
+                  </p>
+                  <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                    Ferry to Riphagen: these Dutch films and series on Netflix
+                    are worth watching
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop: Stacked layout -->
+            <div class="d-none d-md-block">
+              <img
+                src="./images/img_3.webp"
+                class="img-fluid w-100 mb-2"
+                style="height: 200px; object-fit: cover"
+                alt="Post 2"
+              />
+              <h5 class="fw-semibold mb-0" style="font-size: 1rem">
+                <a href="#" class="text-decoration-none text-dark">
+                  Ferry to Riphagen: these Dutch films and series on Netflix are
+                  worth watching
+                </a>
+              </h5>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="col-12 col-md-4">
+            <!-- Mobile: Horizontal layout -->
+            <div class="d-block d-md-none">
+              <div class="d-flex">
+                <img
+                  src="./images/img_2webp.webp"
+                  alt="Post 3"
+                  class="img-fluid"
+                  style="
+                    width: 171px;
+                    height: 112px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                  "
+                />
+                <div>
+                  <p
+                    class="fw-semibold mb-1"
+                    style="color: #3754a3; font-size: 0.85rem"
+                  >
+                    Film & Series
+                  </p>
+                  <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                    Netflix drops promising footage of Frankenstein with Oscar
+                    winner
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop: Stacked layout -->
+            <div class="d-none d-md-block">
+              <img
+                src="./images/img_2webp.webp"
+                class="img-fluid w-100 mb-2"
+                style="height: 200px; object-fit: cover"
+                alt="Post 3"
+              />
+              <h5 class="fw-semibold mb-0" style="font-size: 1rem">
+                <a href="#" class="text-decoration-none text-dark">
+                  Netflix drops promising footage of Frankenstein with Oscar
+                  winner
+                </a>
+              </h5>
+            </div>
           </div>
         </div>
       </div>
@@ -773,7 +1243,9 @@
                 );
               "
             >
-              <p class="text-white fw-bold m-0">
+              <p
+                class="text-white fw-bold m-0 align-items-center justify-content-center"
+              >
                 This is what happens when you do 100 push-ups a day for a month
               </p>
             </div>
@@ -893,25 +1365,29 @@
       style="background-color: #ebebeb"
     >
       <div class="container">
-        <h2 class="fw-bold mb-4" style="color: #000">
-          Sign up for the newsletter
-        </h2>
+        <h2 class="fw-bold mb-4 text-dark">Sign up for the newsletter</h2>
+
         <form
-          class="newsletter-form d-flex flex-column flex-sm-row justify-content-center align-items-stretch gap-2 mx-auto"
+          class="newsletter-form d-flex flex-column flex-sm-row justify-content-center align-items-stretch mx-auto"
           style="max-width: 500px"
+          method="POST"
         >
+          <label for="newsletter-email" class="visually-hidden"
+            >Email address</label
+          >
           <input
             type="email"
+            id="newsletter-email"
+            name="email"
             class="form-control rounded-0"
-            placeholder="Enter your email"
             required
           />
           <button
             type="submit"
             class="btn fw-bold text-white px-4 rounded-0"
-            style="background-color: #2d4db8"
+            style="background-color: #2d4db8; width: 250px !important"
           >
-            TO REGISTER
+            To Register
           </button>
         </form>
       </div>
@@ -960,7 +1436,9 @@
                 >
               </li>
               <li>
-                <a href="./contact.html" class="text-white text-decoration-none">Contact</a>
+                <a href="./contact.html" class="text-white text-decoration-none"
+                  >Contact</a
+                >
               </li>
               <li>
                 <a href="#" class="text-white text-decoration-none">Colophon</a>
@@ -1041,20 +1519,30 @@
             <h5 class="fw-bold mb-3">Discover</h5>
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="./FinancialMatters/financialMatter.html" class="text-white text-decoration-none"
+                <a
+                  href="./FinancialMatters/financialMatter.html"
+                  class="text-white text-decoration-none"
                   >Financial matters</a
                 >
               </li>
               <li>
-                <a href="./Tech/tech.html" class="text-white text-decoration-none">Tech</a>
+                <a
+                  href="./Tech/tech.html"
+                  class="text-white text-decoration-none"
+                  >Tech</a
+                >
               </li>
               <li>
-                <a href="./Film&Series/film.html" class="text-white text-decoration-none"
+                <a
+                  href="./Film&Series/film.html"
+                  class="text-white text-decoration-none"
                   >Film &amp; Series</a
                 >
               </li>
               <li>
-                <a href="./health.html" class="text-white text-decoration-none">Health</a>
+                <a href="./health.html" class="text-white text-decoration-none"
+                  >Health</a
+                >
               </li>
               <li>
                 <a href="./food.html" class="text-white text-decoration-none"
