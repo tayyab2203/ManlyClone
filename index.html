@@ -360,107 +360,198 @@
 
     <!-- Overlay -->
     <div id="overlay" class="overlay"></div>
-    <!-- hero -->
-    <section class="py-5 bg-white">
+
+    <!-- ✅ FEATURED IMAGE FOR MOBILE (FULL EDGE TO EDGE, OUTSIDE CONTAINER) -->
+    <div
+  class="d-block d-lg-none position-relative overflow-hidden"
+  style="margin: 0; padding: 0;"
+>
+  <img
+    src="./images/img_1.webp"
+    class="w-100"
+    style="display: block; object-fit: cover; aspect-ratio: 16/9; height: 350px;"
+    alt="Main article image"
+  />
+
+  <!-- 🏷 Badge: Bottom-left -->
+  <span
+    class="position-absolute text-primary fw-bold small rounded bg-white px-2 py-1"
+    style="
+      bottom: 65px;
+      left: 12px;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      z-index: 3;
+    "
+  >
+    SALARY & WEALTH
+  </span>
+
+  <!-- 📝 Title: just below the badge -->
+  <h5
+    class="position-absolute text-white fw-bold"
+    style="
+      font-size: 16px;
+      bottom: 15px;
+      left: 12px;
+      right: 12px;
+      margin: 0;
+      z-index: 3;
+    "
+  >
+    CBS shows: 50% of millionaires in the Netherlands are only just millionaires
+  </h5>
+</div>
+
+
+    <!--  MAIN SECTION WITH CONTAINER (ONLY ON DESKTOP) -->
+    <section class="bg-white mb-4">
       <div class="container">
-        <div class="row g-4">
-          <!-- Large Image (always full width on mobile, left on desktop) -->
-          <div class="col-lg-8">
-            <div class="position-relative overflow-hidden">
-              <img
-                src="./images/img_1.webp"
-                class="img-fluid w-100"
-                style="object-fit: cover; height: 100%"
-              />
-              <div
-                class="position-absolute bottom-0 start-0 w-100 p-4"
-                style="
-                  background: linear-gradient(
-                    to top,
-                    rgba(0, 0, 0, 0.7),
-                    transparent
-                  );
-                "
-              >
-                <span class="badge bg-light text-dark text-uppercase mb-2"
-                  >Financial matters</span
+        <!-- Desktop version -->
+        <div class="row g-4 d-none d-lg-flex pt-4">
+         
+          <!--DESKTOP VERSION (hidden on mobile) -->
+          <div class="row g-4 d-none d-lg-flex">
+            <!-- Large Featured Article -->
+            <div class="col-lg-8">
+              <div class="position-relative overflow-hidden rounded">
+                <img
+                  src="./images/img_1.webp"
+                  class="img-fluid w-100"
+                  style="aspect-ratio: 16/9; object-fit: cover"
+                  alt="Main article image"
+                />
+                <div
+                  class="position-absolute bottom-0 start-0 w-100 p-3"
+                  style="
+                    background: linear-gradient(
+                      to top,
+                      rgba(0, 0, 0, 0.6),
+                      transparent
+                    );
+                  "
                 >
-                <h3 class="text-white fw-bold">
-                  How to Make Your Money Work Harder in 2025
-                </h3>
-                <p class="text-white mb-0">
-                  Smart investing tips you can start using today.
-                </p>
+                  <span class="badge bg-light text-primary fw-bold mb-2 small">
+                    SALARY & WEALTH
+                  </span>
+                  <h4 class="text-white fw-bold mb-0">
+                    CBS shows: 50% of millionaires in the Netherlands are only
+                    just millionaires
+                  </h4>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Right 2 cards (stacked vertically on desktop, side-by-side on mobile) -->
-          <div class="col-lg-4">
-            <div class="row row-cols-1 row-cols-lg-1 g-3">
-              <!-- Card 1 -->
-              <div class="col">
+            <!-- Right: 2 stacked cards -->
+            <div class="col-lg-4">
+              <div class="d-flex flex-column gap-3">
+                <!-- Card 1 -->
                 <div
-                  class="position-relative overflow-hidden"
-                  style="height: 230px"
+                  class="position-relative overflow-hidden rounded"
+                  style="aspect-ratio: 16/9"
                 >
                   <img
                     src="./images/img_2webp.webp"
                     class="img-fluid w-100 h-100"
                     style="object-fit: cover"
+                    alt="Card 1"
                   />
                   <div
-                    class="position-absolute bottom-0 start-0 w-100 p-3"
+                    class="position-absolute bottom-0 start-0 w-100 p-2"
                     style="
                       background: linear-gradient(
                         to top,
-                        rgba(0, 0, 0, 0.7),
+                        rgba(0, 0, 0, 0.6),
                         transparent
                       );
                     "
                   >
                     <span
-                      class="badge bg-light text-dark text-uppercase small mb-1"
-                      >Salary & Wealth</span
+                      class="badge bg-light text-primary fw-bold mb-1 small"
                     >
-                    <h6 class="text-white mb-0">Where do you earn the most</h6>
+                      FINANCIAL MATTERS
+                    </span>
+                    <p class="text-white fw-semibold mb-0 small">
+                      PSV and Go Ahead Eagles add these amounts after the Johan
+                      Cruijff Shield
+                    </p>
                   </div>
                 </div>
-              </div>
 
-              <!-- Card 2 -->
-              <div class="col">
+                <!-- Card 2 -->
                 <div
-                  class="position-relative overflow-hidden"
-                  style="height: 235px"
+                  class="position-relative overflow-hidden rounded"
+                  style="aspect-ratio: 16/9"
                 >
                   <img
                     src="./images/img_3.webp"
                     class="img-fluid w-100 h-100"
                     style="object-fit: cover"
+                    alt="Card 2"
                   />
                   <div
-                    class="position-absolute bottom-0 start-0 w-100 p-3"
+                    class="position-absolute bottom-0 start-0 w-100 p-2"
                     style="
                       background: linear-gradient(
                         to top,
-                        rgba(0, 0, 0, 0.7),
+                        rgba(0, 0, 0, 0.6),
                         transparent
                       );
                     "
                   >
                     <span
-                      class="badge bg-light text-dark text-uppercase small mb-1"
-                      >Salary & Wealth</span
+                      class="badge bg-light text-primary fw-bold mb-1 small"
                     >
-                    <p class="text-white mb-0 small">
-                      The assets of BALR founder Demy de Zeeuw after the
-                      bankruptcy
+                      FINANCIAL MATTERS
+                    </span>
+                    <p class="text-white fw-semibold mb-0 small">
+                      Train tickets more expensive again: this is what you pay
+                      in the rest of Europe
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  MINI ARTICLES ON MOBILE -->
+      <div class="d-block d-lg-none px-3 pt-3">
+        <!-- Mini Article 1 -->
+        <div class="d-flex gap-3 mb-3">
+          <img
+            src="./images/img_2webp.webp"
+            alt="Card 1"
+            class="rounded"
+            style="width: 90px; height: 60px; object-fit: cover"
+          />
+          <div>
+            <span class="text-primary fw-bold small d-block mb-1"
+              >Financial matters</span
+            >
+            <p class="mb-0 small fw-semibold text-dark" style="font-size: 14px">
+              PSV and Go Ahead Eagles add these amounts after the Johan Cruijff
+              Shield
+            </p>
+          </div>
+        </div>
+        <!-- Mini Article 2 -->
+        <div class="d-flex gap-3">
+          <img
+            src="./images/img_3.webp"
+            alt="Card 2"
+            class="rounded"
+            style="width: 90px; height: 60px; object-fit: cover"
+          />
+          <div>
+            <span class="text-primary fw-bold small d-block mb-1"
+              >Financial matters</span
+            >
+            <p class="mb-0 small fw-semibold text-dark" style="font-size: 14px">
+              Train tickets more expensive again: this is what you pay in the
+              rest of Europe
+            </p>
           </div>
         </div>
       </div>
@@ -958,7 +1049,7 @@
           </div>
 
           <!-- Article 3 -->
-           <div class="d-flex mb-3">
+          <div class="d-flex mb-3">
             <img
               src="./images/h&f_2.webp"
               class="img-fluid"

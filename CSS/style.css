@@ -7,6 +7,28 @@ body {
 }
 
 
+@media (max-width: 767.98px) {
+  header .container {
+    padding-top: 1.5rem !important; /* less than py-3 */
+    padding-bottom: 0.85rem !important;
+    margin-top: 0.15rem !important; /* reduce space from top */
+    margin-bottom: 0.3rem !important;
+  }
+
+  header img.manly-logo {
+    height: 33px !important;
+    width: auto;
+  }
+
+  header .fa-search,
+  header #hamburger svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+
+
 .nav-link {
   font-size: 18px;
   font-weight: 700;
