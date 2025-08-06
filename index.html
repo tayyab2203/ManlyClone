@@ -361,7 +361,7 @@
     <!-- Overlay -->
     <div id="overlay" class="overlay"></div>
 
-    <!-- ✅ FEATURED IMAGE FOR MOBILE (FULL EDGE TO EDGE, OUTSIDE CONTAINER) -->
+    <!--  FEATURED IMAGE FOR MOBILE (FULL EDGE TO EDGE, OUTSIDE CONTAINER) -->
     <div
       class="d-block d-lg-none position-relative overflow-hidden"
       style="margin: 0; padding: 0"
@@ -381,7 +381,7 @@
       <!-- 🏷 Badge: Bottom-left -->
       <span class="featured-label"> SALARY & WEALTH </span>
 
-      <!-- 📝 Title: just below the badge -->
+      <!--Title: just below the badge -->
       <h5
         class="position-absolute text-white fw-bold"
         style="
@@ -400,115 +400,170 @@
 
     <!--  MAIN SECTION WITH CONTAINER (ONLY ON DESKTOP) -->
     <section class="bg-white m-4">
-  <div class="container">
-    <!-- DESKTOP ONLY -->
-    <div class="row g-4 d-none d-lg-flex pt-4">
-      <!-- Large Featured Article -->
-      <div class="col-lg-8">
-        <div class="position-relative overflow-hidden rounded-0">
+      <div class="container">
+        <!-- DESKTOP ONLY -->
+        <div class="row g-4 d-none d-lg-flex pt-4">
+          <!-- Large Featured Article -->
+          <div class="col-lg-8">
+            <div class="position-relative overflow-hidden rounded-0">
+              <img
+                src="./images/img_1.webp"
+                class="img-fluid w-100"
+                style="aspect-ratio: 16/9; object-fit: cover"
+                alt="Main article image"
+              />
+              <div
+                class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="
+                  background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.6),
+                    transparent
+                  );
+                "
+              >
+                <span class="featured-label">SALARY & WEALTH</span>
+                <h4 class="text-white fw-bold mb-0">
+                  CBS shows: 50% of millionaires in the Netherlands are only
+                  just millionaires
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 2 stacked cards -->
+          <div class="col-lg-4">
+            <div class="d-flex flex-column gap-3">
+              <!-- Card 1 -->
+              <div
+                class="position-relative overflow-hidden rounded-0"
+                style="aspect-ratio: 16/9"
+              >
+                <img
+                  src="./images/img_2webp.webp"
+                  class="img-fluid w-100 h-100"
+                  style="object-fit: cover"
+                  alt="Card 1"
+                />
+                <div
+                  class="position-absolute bottom-0 start-0 w-100 p-2"
+                  style="
+                    background: linear-gradient(
+                      to top,
+                      rgba(0, 0, 0, 0.6),
+                      transparent
+                    );
+                  "
+                >
+                  <span class="featured-label-sm">Financial Matters</span>
+                  <p class="text-white fw-semibold mb-0 small">
+                    PSV and Go Ahead Eagles add these amounts after the Johan
+                    Cruijff Shield
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="position-relative overflow-hidden rounded-0"
+                style="aspect-ratio: 16/9"
+              >
+                <img
+                  src="./images/img_3.webp"
+                  class="img-fluid w-100 h-100"
+                  style="object-fit: cover"
+                  alt="Card 2"
+                />
+                <div
+                  class="position-absolute bottom-0 start-0 w-100 p-2"
+                  style="
+                    background: linear-gradient(
+                      to top,
+                      rgba(0, 0, 0, 0.6),
+                      transparent
+                    );
+                  "
+                >
+                  <span class="featured-label-sm">Financial Matters</span>
+                  <p class="text-white fw-semibold mb-0 small">
+                    Train tickets more expensive again: this is what you pay in
+                    the rest of Europe
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE ONLY: Mini Articles -->
+      <!-- MOBILE ONLY: Mini Articles -->
+      <div class="d-block d-lg-none">
+        <!-- Mini Article 1 -->
+        <div class="d-flex mb-3">
           <img
             src="./images/img_1.webp"
-            class="img-fluid w-100"
-            style="aspect-ratio: 16/9; object-fit: cover"
-            alt="Main article image"
+            alt="Post 1"
+            class="img-fluid"
+            style="
+              width: 150px;
+              max-width: 40%;
+              min-width: 120px;
+              height: 112px;
+              object-fit: cover;
+              margin-right: 12px;
+            "
           />
-          <div
-            class="position-absolute bottom-0 start-0 w-100 p-3"
-            style="background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);"
-          >
-            <span class="featured-label">SALARY & WEALTH</span>
-            <h4 class="text-white fw-bold mb-0">
-              CBS shows: 50% of millionaires in the Netherlands are only just millionaires
-            </h4>
+          <div style="flex: 1; min-width: 0">
+            <p
+              class="fw-semibold mb-1"
+              style="color: #3754a3; font-size: 0.85rem"
+            >
+              Film & Series
+            </p>
+            <p
+              class="fw-semibold mb-0"
+              style="font-size: 0.95rem; overflow: hidden"
+            >
+              Horror film 'Weapons' scores top rating on Rotten Tomatoes after
+              clever marketing
+            </p>
+          </div>
+        </div>
+
+        <!-- Mini Article 2 -->
+        <div class="d-flex mb-3">
+          <img
+            src="./images/img_1.webp"
+            alt="Post 2"
+            class="img-fluid"
+            style="
+              width: 150px;
+              max-width: 40%;
+              min-width: 120px;
+              height: 112px;
+              object-fit: cover;
+              margin-right: 12px;
+            "
+          />
+          <div style="flex: 1; min-width: 0">
+            <p
+              class="fw-semibold mb-1"
+              style="color: #3754a3; font-size: 0.85rem"
+            >
+              Film & Series
+            </p>
+            <p
+              class="fw-semibold mb-0"
+              style="font-size: 0.95rem; overflow: hidden"
+            >
+              Horror film 'Weapons' scores top rating on Rotten Tomatoes after
+              clever marketing
+            </p>
           </div>
         </div>
       </div>
-
-      <!-- Right: 2 stacked cards -->
-      <div class="col-lg-4">
-        <div class="d-flex flex-column gap-3">
-          <!-- Card 1 -->
-          <div class="position-relative overflow-hidden rounded-0" style="aspect-ratio: 16/9;">
-            <img
-              src="./images/img_2webp.webp"
-              class="img-fluid w-100 h-100"
-              style="object-fit: cover"
-              alt="Card 1"
-            />
-            <div
-              class="position-absolute bottom-0 start-0 w-100 p-2"
-              style="background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);"
-            >
-              <span class="featured-label-sm">Financial Matters</span>
-              <p class="text-white fw-semibold mb-0 small">
-                PSV and Go Ahead Eagles add these amounts after the Johan Cruijff Shield
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="position-relative overflow-hidden rounded-0" style="aspect-ratio: 16/9;">
-            <img
-              src="./images/img_3.webp"
-              class="img-fluid w-100 h-100"
-              style="object-fit: cover"
-              alt="Card 2"
-            />
-            <div
-              class="position-absolute bottom-0 start-0 w-100 p-2"
-              style="background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);"
-            >
-              <span class="featured-label-sm">Financial Matters</span>
-              <p class="text-white fw-semibold mb-0 small">
-                Train tickets more expensive again: this is what you pay in the rest of Europe
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ✅ MOBILE ONLY: Mini Articles -->
-  <div class="d-block d-lg-none px-3 pt-3">
-    <!-- Mini Article 1 -->
-    <div class="d-flex mb-3">
-      <img
-        src="./images/img_1.webp"
-        alt="Post 1"
-        class="img-fluid"
-        style="width: 171px; height: 112px; object-fit: cover; margin-right: 15px;"
-      />
-      <div>
-        <p class="fw-semibold mb-1" style="color: #3754a3; font-size: 0.85rem;">
-          Film & Series
-        </p>
-        <p class="fw-semibold mb-0" style="font-size: 0.95rem;">
-          Horror film 'Weapons' scores top rating on Rotten Tomatoes after clever marketing
-        </p>
-      </div>
-    </div>
-
-    <!-- Mini Article 2 -->
-    <div class="d-flex">
-      <img
-        src="./images/img_1.webp"
-        alt="Post 2"
-        class="img-fluid"
-        style="width: 171px; height: 112px; object-fit: cover; margin-right: 15px;"
-      />
-      <div>
-        <p class="fw-semibold mb-1" style="color: #3754a3; font-size: 0.85rem;">
-          Film & Series
-        </p>
-        <p class="fw-semibold mb-0" style="font-size: 0.95rem;">
-          Horror film 'Weapons' scores top rating on Rotten Tomatoes after clever marketing
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- News Article -->
     <section class="latest-articles py-5">
@@ -628,12 +683,17 @@
     <section class="film-series-section py-5 bg-white">
       <div class="container-xl">
         <!-- Section Heading -->
-        <h2
-          class="fw-bold fst-italic mb-4"
-          style="color: #3754a3; font-size: 2rem"
+        <a
+          href="./FinancialMatters/financialMatter.html"
+          style="text-decoration: none"
         >
-          Financial matter
-        </h2>
+          <h2
+            class="fw-bold fst-italic mb-4"
+            style="color: #3754a3; font-size: 2rem"
+          >
+            Financial matter
+          </h2>
+        </a>
 
         <!-- Desktop Hero Section -->
         <div class="d-none d-lg-flex mb-4" style="height: 520px">
@@ -873,11 +933,8 @@
                 style="object-fit: cover"
                 alt="Tech 1"
               />
-              <div
-                class="position-absolute bottom-0 start-0 w-100 p-3"
-                style="background: rgba(0, 0, 0, 0.4)"
-              >
-                <h5 class="text-white fw-bold m-0">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3 m-2">
+                <h5 class="text-white fw-bold m-0" style="font-size: 23px">
                   Action's popular kamado BBQ is much cheaper than the expensive
                   brand version
                 </h5>
@@ -892,11 +949,8 @@
                 style="object-fit: cover"
                 alt="Tech 2"
               />
-              <div
-                class="position-absolute bottom-0 start-0 w-100 p-3"
-                style="background: rgba(0, 0, 0, 0.4)"
-              >
-                <h5 class="text-white fw-bold m-0">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3">
+                <h5 class="text-white fw-bold m-0" style="font-size: 23px">
                   Action's wireless earphones are a lasting hit and cost next to
                   nothing
                 </h5>
@@ -913,11 +967,8 @@
                 style="object-fit: cover"
                 alt="Tech 3"
               />
-              <div
-                class="position-absolute bottom-0 start-0 w-100 p-3"
-                style="background: rgba(0, 0, 0, 0.4)"
-              >
-                <h5 class="text-white fw-bold m-0">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3">
+                <h5 class="text-white fw-bold m-0" style="font-size: 23px">
                   LEGO is now selling an iconic Nintendo Game Boy for a bargain
                   price
                 </h5>
@@ -1262,141 +1313,219 @@
       class="health-fitness-section py-5"
       style="background-color: #f8f9fa"
     >
-      <div class="container">
-        <h2 class="mb-4 fw-bold" style="color: #3754a3; font-style: italic">
+      <div class="container-xl">
+        <!-- Section Heading -->
+        <h2
+          class="fw-bold fst-italic mb-4"
+          style="color: #3754a3; font-size: 2rem"
+        >
           Health & Fitness
         </h2>
 
-        <!-- Main Article -->
-        <div class="row mb-4">
-          <!-- Mobile: image with overlay text -->
-          <div class="col-12 d-md-none position-relative mb-3">
-            <img
-              src="./images/pushup.webp"
-              alt="Pushups"
-              class="img-fluid w-100"
-              style="object-fit: cover; height: 250px"
-            />
-            <div
-              class="position-absolute bottom-0 start-0 p-3 w-100"
-              style="
-                background: linear-gradient(
-                  to top,
-                  rgba(0, 0, 0, 0.7),
-                  transparent
-                );
-              "
+        <!-- Desktop Hero Section -->
+        <div class="d-none d-lg-flex mb-4" style="height: 520px">
+          <!-- Text Column -->
+          <div
+            class="flex-grow-1 border-top border-bottom border-dark d-flex flex-column justify-content-center me-4"
+            style="height: 100%"
+          >
+            <ul
+              class="list-unstyled d-flex flex-wrap align-items-center text-muted mb-2"
             >
-              <p
-                class="text-white fw-bold m-0 align-items-center justify-content-center"
-              >
-                This is what happens when you do 100 push-ups a day for a month
-              </p>
-            </div>
+              <li class="me-2">
+                <span
+                  class="fw-semibold text-decoration-none"
+                  style="color: #3754a3"
+                >
+                  Health
+                </span>
+              </li>
+              <li class="mx-2">•</li>
+              <li>
+                <time class="text-muted">July 2, 2025</time>
+              </li>
+            </ul>
+            <h2 class="fw-bold mb-0" style="color: black; font-size: 2.5rem">
+              <a href="#" class="text-decoration-none text-dark">
+                This is what happens <br />
+                when you do 100 <br />
+                push-ups a day for <br />
+                a month
+              </a>
+            </h2>
           </div>
 
-          <!-- Desktop: text and image side-by-side -->
-          <div
-            class="col-md-6 d-none d-md-block"
-            style="
-              border-top: 1.5px solid black;
-              border-bottom: 1.5px solid black;
-            "
-          >
-            <span class="fw-semibold" style="color: #3754a3">
-              Health • July 2, 2025
-            </span>
-            <h3 class="fw-bold mt-2" style="color: black">
-              This is what happens when you do 100 push-ups a day for a month
-            </h3>
-          </div>
-          <div class="col-md-6 d-none d-md-block">
+          <!-- Image Column -->
+          <div style="flex: 0 0 auto; width: 855px">
             <img
               src="./images/pushup.webp"
+              class="img-fluid h-100 w-100"
+              style="object-fit: cover"
               alt="Pushups"
-              class="img-fluid w-100"
-              style="object-fit: cover; height: 100%"
             />
           </div>
         </div>
 
-        <!-- Sub-Articles -->
-        <div class="row gy-4">
-          <!-- Article 1 -->
-          <div class="col-12 col-md-4 d-flex">
+        <!-- Mobile Hero Section -->
+        <div class="d-block d-lg-none mb-4">
+          <div class="position-relative" style="aspect-ratio: 16/9">
             <img
-              src="./images/h&f_1.webp"
-              alt="Cooling Hack"
-              class="img-fluid"
-              style="
-                width: 100px;
-                height: 80px;
-                object-fit: cover;
-                margin-right: 15px;
-              "
+              src="./images/pushup.webp"
+              class="position-absolute w-100 h-100 object-fit-cover"
+              alt="Pushups"
             />
-            <div>
-              <p
-                class="text-primary fw-semibold mb-1"
-                style="font-size: 0.85rem"
-              >
-                Health
-              </p>
-              <p class="fw-semibold mb-0">
-                Heatwave hacks: how to keep your home cooler and sleep better
-              </p>
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-3"
+              style="background: rgba(0, 0, 0, 0.2)"
+            >
+              <h2 class="text-white mb-0 fs-5 fw-bold">
+                <a href="#" class="text-white text-decoration-none">
+                  This is what happens when you do 100 push-ups a day for a
+                  month
+                </a>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-Articles -->
+        <div class="row g-4">
+          <!-- Article 1 -->
+          <div class="col-12 col-md-4">
+            <!-- Mobile: Horizontal layout -->
+            <div class="d-block d-md-none">
+              <div class="d-flex">
+                <img
+                  src="./images/h&f_1.webp"
+                  alt="Cooling Hack"
+                  class="img-fluid"
+                  style="
+                    width: 171px;
+                    height: 112px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                  "
+                />
+                <div>
+                  <p
+                    class="fw-semibold mb-1"
+                    style="color: #3754a3; font-size: 0.85rem"
+                  >
+                    Health
+                  </p>
+                  <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                    Heatwave hacks: how to keep your home cooler and sleep
+                    better
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop: Stacked layout -->
+            <div class="d-none d-md-block">
+              <img
+                src="./images/h&f_1.webp"
+                class="img-fluid w-100 mb-2"
+                style="height: 200px; object-fit: cover"
+                alt="Cooling Hack"
+              />
+              <h5 class="fw-semibold mb-0" style="font-size: 1rem">
+                <a href="#" class="text-decoration-none text-dark">
+                  Heatwave hacks: how to keep your home cooler and sleep better
+                </a>
+              </h5>
             </div>
           </div>
 
           <!-- Article 2 -->
-          <div class="col-12 col-md-4 d-flex">
-            <img
-              src="./images/h&f_2.webp"
-              alt="Games"
-              class="img-fluid"
-              style="
-                width: 100px;
-                height: 80px;
-                object-fit: cover;
-                margin-right: 15px;
-              "
-            />
-            <div>
-              <p
-                class="text-primary fw-semibold mb-1"
-                style="font-size: 0.85rem"
-              >
-                Health
-              </p>
-              <p class="fw-semibold mb-0">
-                Enhanced Games Cash Prizes: The Olympics on Steroids
-              </p>
+          <div class="col-12 col-md-4">
+            <!-- Mobile: Horizontal layout -->
+            <div class="d-block d-md-none">
+              <div class="d-flex">
+                <img
+                  src="./images/h&f_2.webp"
+                  alt="Games"
+                  class="img-fluid"
+                  style="
+                    width: 171px;
+                    height: 112px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                  "
+                />
+                <div>
+                  <p
+                    class="fw-semibold mb-1"
+                    style="color: #3754a3; font-size: 0.85rem"
+                  >
+                    Health
+                  </p>
+                  <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                    Enhanced Games Cash Prizes: The Olympics on Steroids
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop: Stacked layout -->
+            <div class="d-none d-md-block">
+              <img
+                src="./images/h&f_2.webp"
+                class="img-fluid w-100 mb-2"
+                style="height: 200px; object-fit: cover"
+                alt="Games"
+              />
+              <h5 class="fw-semibold mb-0" style="font-size: 1rem">
+                <a href="#" class="text-decoration-none text-dark">
+                  Enhanced Games Cash Prizes: The Olympics on Steroids
+                </a>
+              </h5>
             </div>
           </div>
 
           <!-- Article 3 -->
-          <div class="col-12 col-md-4 d-flex">
-            <img
-              src="./images/h&f_3.webp"
-              alt="Cocktails"
-              class="img-fluid"
-              style="
-                width: 100px;
-                height: 80px;
-                object-fit: cover;
-                margin-right: 15px;
-              "
-            />
-            <div>
-              <p
-                class="text-primary fw-semibold mb-1"
-                style="font-size: 0.85rem"
-              >
-                Food & Drinks
-              </p>
-              <p class="fw-semibold mb-0">
-                These are the cocktails with the most and least calories
-              </p>
+          <div class="col-12 col-md-4">
+            <!-- Mobile: Horizontal layout -->
+            <div class="d-block d-md-none">
+              <div class="d-flex">
+                <img
+                  src="./images/h&f_3.webp"
+                  alt="Cocktails"
+                  class="img-fluid"
+                  style="
+                    width: 171px;
+                    height: 112px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                  "
+                />
+                <div>
+                  <p
+                    class="fw-semibold mb-1"
+                    style="color: #3754a3; font-size: 0.85rem"
+                  >
+                    Food & Drinks
+                  </p>
+                  <p class="fw-semibold mb-0" style="font-size: 0.95rem">
+                    These are the cocktails with the most and least calories
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop: Stacked layout -->
+            <div class="d-none d-md-block">
+              <img
+                src="./images/h&f_3.webp"
+                class="img-fluid w-100 mb-2"
+                style="height: 200px; object-fit: cover"
+                alt="Cocktails"
+              />
+              <h5 class="fw-semibold mb-0" style="font-size: 1rem">
+                <a href="#" class="text-decoration-none text-dark">
+                  These are the cocktails with the most and least calories
+                </a>
+              </h5>
             </div>
           </div>
         </div>
@@ -1404,38 +1533,42 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section
-      class="newsletter-section py-5 text-center"
-      style="background-color: #ebebeb"
-    >
-      <div class="container">
-        <h2 class="fw-bold mb-4 text-dark">Sign up for the newsletter</h2>
+<section class="newsletter-section py-5 text-center" style="background-color: #ebebeb">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-dark">Sign up for the newsletter</h2>
 
-        <form
-          class="newsletter-form d-flex flex-column flex-sm-row justify-content-center align-items-stretch mx-auto"
-          style="max-width: 500px"
-          method="POST"
-        >
-          <label for="newsletter-email" class="visually-hidden"
-            >Email address</label
-          >
-          <input
-            type="email"
-            id="newsletter-email"
-            name="email"
-            class="form-control rounded-0"
-            required
-          />
-          <button
-            type="submit"
-            class="btn fw-bold text-white px-4 rounded-0"
-            style="background-color: #2d4db8; width: 250px !important"
-          >
-            To Register
-          </button>
-        </form>
+    <form
+      class="newsletter-form row g-2 justify-content-center"
+      style="max-width: 600px; margin: 0 auto"
+      method="POST"
+    >
+      <!-- Email Input -->
+      <div class="col-12 col-sm-8">
+        <label for="newsletter-email" class="visually-hidden">Email address</label>
+        <input
+          type="email"
+          id="newsletter-email"
+          name="email"
+          class="form-control rounded-0"
+          placeholder="Enter your email"
+          required
+        />
       </div>
-    </section>
+
+      <!-- Submit Button -->
+      <div class="col-12 col-sm-4">
+        <button
+          type="submit"
+          class="btn fw-bold text-white w-100 rounded-0"
+          style="background-color: #2d4db8"
+        >
+          To Register
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
 
     <footer
       class="site-footer text-white pt-5 pb-4"
@@ -1452,7 +1585,6 @@
                 width="114"
                 height="38"
                 class="footer-logo mb-3"
-                
               />
             </a>
             <div class="d-flex align-items-center gap-3 fs-5">

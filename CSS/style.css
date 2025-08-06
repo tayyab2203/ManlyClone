@@ -316,7 +316,7 @@ img.footer-logo {
 .header-section {
   background-color: #f2f2f2;
   padding: 3rem 0;
-  margin-top: 23px !important;
+  /* margin-top: 23px !important; */
 }
 .custom-color {
   color: #f7f7f7 !important;
@@ -380,8 +380,8 @@ img.footer-logo {
 .featured-label {
   display: inline-block;
   position: absolute;
-  bottom: 85px;
-  left: 18px;
+  bottom: 71px;
+  left: 12px;
   background-color: #ebebeb;
   color: #4665bc;
   font-size: 17px;
