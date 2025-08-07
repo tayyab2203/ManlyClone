@@ -321,6 +321,32 @@ img.footer-logo {
   padding: 3rem 0;
   /* margin-top: 23px !important; */
 }
+.header-section-about{
+  background-color: #fffdfd;
+  padding: 3rem 0;
+  padding: 3rem 0px 5px 0px ;
+}
+
+.section-title-about{
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.55rem;
+  margin-bottom: 0.5rem;
+  line-height: 49px;
+}
+.section-title-about-lifestyle{
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+  border-bottom: 2.5px solid #F2F2F2;
+}
+.about-href{
+  color: #3754A3;
+  font-size: 18px;
+   font-weight: bold;
+}
 .custom-color {
   color: #f7f7f7 !important;
 }
