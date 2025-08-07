@@ -267,6 +267,9 @@ img.footer-logo {
   line-height: 1.4;
   font-weight: 900;
 }
+.customColor{
+  color: #3754A3;
+}
 
 /* TECH SECTION STYLES */
 .tech-section {
@@ -517,3 +520,7 @@ img.footer-logo {
     transition: transform 0.3s ease;
   }
 }
+
+
+
+
