@@ -1066,27 +1066,35 @@
         <h2 class="fw-bold mb-4 text-dark">Sign up for the newsletter</h2>
 
         <form
-          class="newsletter-form d-flex flex-column flex-sm-row justify-content-center align-items-stretch mx-auto"
-          style="max-width: 500px"
+          class="newsletter-form row g-2 justify-content-center"
+          style="max-width: 600px; margin: 0 auto"
           method="POST"
         >
-          <label for="newsletter-email" class="visually-hidden"
-            >Email address</label
-          >
-          <input
-            type="email"
-            id="newsletter-email"
-            name="email"
-            class="form-control rounded-0"
-            required
-          />
-          <button
-            type="submit"
-            class="btn fw-bold text-white px-4 rounded-0"
-            style="background-color: #2d4db8; width: 250px !important"
-          >
-            To Register
-          </button>
+          <!-- Email Input -->
+          <div class="col-12 col-sm-8">
+            <label for="newsletter-email" class="visually-hidden"
+              >Email address</label
+            >
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              class="form-control rounded-0"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <div class="col-12 col-sm-4">
+            <button
+              type="submit"
+              class="btn fw-bold text-white w-100 rounded-0"
+              style="background-color: #2d4db8"
+            >
+              To Register
+            </button>
+          </div>
         </form>
       </div>
     </section>
