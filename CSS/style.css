@@ -59,6 +59,9 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+.hover:hover{
+  color: rgb(59, 59, 241);
+}
 
 .sidebar {
   position: fixed;
