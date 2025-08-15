@@ -1,5 +1,6 @@
+
 body {
-  font-family: "Mulish", " Archivo", sans-serif;
+  font-family: "Mulish", "Archivo", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,6 +39,10 @@ body {
 }
 .custom-nav-gap {
   gap: 64px;
+}
+.custom-para{
+  font-size: 20px !important;
+   line-height: 25px;
 }
 
 .dropdown-toggle::after {
@@ -389,7 +394,7 @@ img.footer-logo {
 }
 
 .article-title {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-top: 5px;
 }
@@ -409,7 +414,7 @@ img.footer-logo {
 .featured-label {
   display: inline-block;
   position: absolute;
-  bottom: 71px;
+  bottom: 81px;
   left: 12px;
   background-color: #ebebeb;
   color: #4665bc;
@@ -423,6 +428,18 @@ img.footer-logo {
   z-index: 3;
   transition: padding 0.3s ease, background-color 0.3s ease;
 }
+@media (max-width: 576px) { /* Bootstrap's mobile breakpoint */
+  .featured-label {
+    bottom: 140px;
+  }
+}
+@media (max-width: 768px) {
+  .featured-label {
+    bottom: 125px;
+  }
+}
+
+
 .featured-label:hover {
   padding-left: 16px;
   padding-right: 16px;
@@ -435,7 +452,7 @@ img.footer-logo {
   left: 13px;
   background-color: #ebebeb;
   color: #4665bc;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   padding: 2px 8px;
   /* border-radius: 3px; */
@@ -464,7 +481,7 @@ img.footer-logo {
   border-radius: 3px;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
-  font-style: italic; /* optional, matches your screenshot */
+  font-style: italic;
   transition: padding 0.3s ease, background-color 0.3s ease;
 }
 
@@ -486,6 +503,13 @@ img.footer-logo {
   display: none;
 }
 
+ @media (min-width: 769px) {
+    .desktop-adjust {
+      position: relative;
+      top: -30px !important;
+      }
+  }
+
 /* Show only on mobile (≤767px) */
 @media (max-width: 767px) {
   .article-meta {
@@ -500,7 +524,7 @@ img.footer-logo {
 }
 
 .custom-pagination .page-link {
-  width: 45px;
+  width: 55px;
   height: 45px;
   text-align: center;
   padding: 10px 0;
@@ -696,3 +720,79 @@ img.footer-logo {
       width: 16px;
       height: 16px;
     }
+
+
+    /* Overlay container - hidden by default */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: none;
+  z-index: 9999;
+}
+
+/* Show overlay when targeted */
+.search-overlay:target {
+  display: block;
+}
+
+/* Close button */
+.search-overlay-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 34px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Content center */
+.search-overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 500px;
+  max-width: 90%;
+}
+
+/* "To search:" text */
+.search-overlay-label {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Input + icon container */
+.search-overlay-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid black;
+  padding: 5px 0;
+}
+
+/* Input styling */
+.search-overlay-input-wrapper input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  color: #555;
+  flex: 1;
+}
+
+.search-overlay-input-wrapper input::placeholder {
+  color: #b3b3c5;
+}
+
+/* Icon inside input */
+.search-overlay-input-wrapper i {
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}

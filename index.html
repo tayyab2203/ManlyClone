@@ -172,7 +172,24 @@
 
         <!-- Right Icons -->
         <div class="d-flex align-items-center gap-3 text-black">
-          <i class="fas fa-search fs-5" role="button"></i>
+          <!-- <i class="fas fa-search fs-5" role="button"></i> -->
+
+          <!-- Search Button -->
+          <a href="#searchOverlayCustom" class="search-overlay-btn">
+            <i class="fas fa-search fs-5" style="color: #1d1d1d;" role="button"></i>
+          </a>
+
+          <!-- Search Overlay -->
+          <div id="searchOverlayCustom" class="search-overlay">
+            <a href="#" class="search-overlay-close">&times;</a>
+            <div class="search-overlay-content">
+              <p class="search-overlay-label">To search:</p>
+              <div class="search-overlay-input-wrapper">
+                <input type="text" placeholder="To search …" />
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
 
           <!-- Custom Hamburger Icon -->
           <div id="hamburger" class="cursor-pointer" title="Menu">
@@ -371,7 +388,7 @@
         class="text-decoration-none text-dark"
       >
         <img
-          src="./images/img_1.webp"
+          src="./images/img_1.1.webp"
           class="w-100"
           style="
             display: block;
@@ -382,15 +399,15 @@
           alt="Main article image"
         />
 
-        <!-- 🏷 Badge: Bottom-left -->
+        <!-- Badge: Bottom-left -->
         <span class="featured-label"> SALARY & WEALTH </span>
 
         <!--Title: just below the badge -->
         <h5
           class="position-absolute text-white fw-bold"
           style="
-            font-size: 16px;
-            bottom: 15px;
+            font-size: 26px;
+            bottom: 23px;
             left: 12px;
             right: 12px;
             margin: 0;
@@ -416,7 +433,7 @@
                 class="text-decoration-none text-dark"
               >
                 <img
-                  src="./images/img_1.webp"
+                  src="./images/img_1.1.webp"
                   class="img-fluid w-100"
                   style="aspect-ratio: 16/9; object-fit: cover"
                   alt="Main article image"
@@ -432,7 +449,7 @@
                   "
                 >
                   <span class="featured-label">SALARY & WEALTH</span>
-                  <h4 class="text-white fw-bold mb-0">
+                  <h4 class="text-white fw-bold mb-0" style="font-size: 1.7rem">
                     CBS shows: 50% of millionaires in the Netherlands are only
                     just millionaires
                   </h4>
@@ -454,7 +471,7 @@
                   class="text-decoration-none text-dark"
                 >
                   <img
-                    src="./images/img_2webp.webp"
+                    src="./images/img_2.1.webp"
                     class="img-fluid w-100 h-100"
                     style="object-fit: cover"
                     alt="Card 1"
@@ -470,7 +487,7 @@
                     "
                   >
                     <span class="featured-label-sm">Financial Matters</span>
-                    <p class="text-white fw-semibold mb-0 small">
+                    <p class="text-white fw-semibold mb-0 small custom-para">
                       PSV and Go Ahead Eagles add these amounts after the Johan
                       Cruijff Shield
                     </p>
@@ -488,7 +505,7 @@
                   class="text-decoration-none text-dark"
                 >
                   <img
-                    src="./images/img_3.webp"
+                    src="./images/img_3.1.webp"
                     class="img-fluid w-100 h-100"
                     style="object-fit: cover"
                     alt="Card 2"
@@ -504,7 +521,7 @@
                     "
                   >
                     <span class="featured-label-sm">Financial Matters</span>
-                    <p class="text-white fw-semibold mb-0 small">
+                    <p class="text-white fw-semibold mb-0 small custom-para">
                       Train tickets more expensive again: this is what you pay
                       in the rest of Europe
                     </p>
@@ -526,7 +543,7 @@
             style="position: absolute; inset: 0; z-index: 1"
           ></a>
           <img
-            src="./images/img_1.webp"
+            src="./images/img_2.1.webp"
             alt="Post 2"
             class="img-fluid"
             style="
@@ -564,7 +581,7 @@
             style="position: absolute; inset: 0; z-index: 1"
           ></a>
           <img
-            src="./images/img_1.webp"
+            src="./images/img_3.1.webp"
             alt="Post 2"
             class="img-fluid"
             style="
@@ -612,11 +629,14 @@
                   alt="E-bike tire"
                 />
                 <span class="custom-label">SALARY & WEALTH</span>
+
                 <div>
-                  <div class="article-meta">
+                  <!-- Normal version for small devices -->
+                  <div class="article-meta d-block d-lg-none d-md-none">
                     SAVE <span class="article-date">· yesterday</span>
                   </div>
-                  <div class="article-title">
+
+                  <div class="article-title desktop-adjust">
                     Worn e-bike tires? Here's how to tell if they need
                     replacing.
                   </div>
@@ -636,11 +656,14 @@
                   alt="E-bike tire"
                 />
                 <span class="custom-label">SAVE</span>
+
                 <div>
-                  <div class="article-meta">
+                  <!-- Normal version for small devices -->
+                  <div class="article-meta d-block d-lg-none d-md-none">
                     SAVE <span class="article-date">· yesterday</span>
                   </div>
-                  <div class="article-title">
+
+                  <div class="article-title desktop-adjust">
                     Worn e-bike tires? Here's how to tell if they need
                     replacing.
                   </div>
@@ -661,10 +684,12 @@
                 />
                 <span class="custom-label">HEALTH</span>
                 <div>
-                  <div class="article-meta">
+                  <!-- Normal version for small devices -->
+                  <div class="article-meta d-block d-lg-none d-md-none">
                     SAVE <span class="article-date">· yesterday</span>
                   </div>
-                  <div class="article-title">
+
+                  <div class="article-title desktop-adjust">
                     Worn e-bike tires? Here's how to tell if they need
                     replacing.
                   </div>
@@ -685,10 +710,12 @@
                 />
                 <span class="custom-label">TECH</span>
                 <div>
-                  <div class="article-meta">
+                  <!-- Normal version for small devices -->
+                  <div class="article-meta d-block d-lg-none d-md-none">
                     SAVE <span class="article-date">· yesterday</span>
                   </div>
-                  <div class="article-title">
+
+                  <div class="article-title desktop-adjust">
                     Worn e-bike tires? Here's how to tell if they need
                     replacing.
                   </div>
@@ -708,10 +735,12 @@
                 />
                 <span class="custom-label">FINANCIAL MATTER</span>
                 <div>
-                  <div class="article-meta">
+                  <!-- Normal version for small devices -->
+                  <div class="article-meta d-block d-lg-none d-md-none">
                     SAVE <span class="article-date">· yesterday</span>
                   </div>
-                  <div class="article-title">
+
+                  <div class="article-title desktop-adjust">
                     Worn e-bike tires? Here's how to tell if they need
                     replacing.
                   </div>
@@ -731,10 +760,12 @@
                 />
                 <span class="custom-label">NETFLIX</span>
                 <div>
-                  <div class="article-meta">
+                  <!-- Normal version for small devices -->
+                  <div class="article-meta d-block d-lg-none d-md-none">
                     SAVE <span class="article-date">· yesterday</span>
                   </div>
-                  <div class="article-title">
+
+                  <div class="article-title desktop-adjust">
                     Worn e-bike tires? Here's how to tell if they need
                     replacing.
                   </div>

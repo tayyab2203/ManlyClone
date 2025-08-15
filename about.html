@@ -189,7 +189,23 @@
 
         <!-- Right Icons -->
         <div class="d-flex align-items-center gap-3 text-black">
-          <i class="fas fa-search fs-5" role="button"></i>
+          <!-- <i class="fas fa-search fs-5" role="button"></i> -->
+          <!-- Search Button -->
+          <a href="#searchOverlayCustom" class="search-overlay-btn">
+            <i class="fas fa-search fs-5" style="color: #1d1d1d;" role="button"></i>
+          </a>
+
+          <!-- Search Overlay -->
+          <div id="searchOverlayCustom" class="search-overlay">
+            <a href="#" class="search-overlay-close">&times;</a>
+            <div class="search-overlay-content">
+              <p class="search-overlay-label">To search:</p>
+              <div class="search-overlay-input-wrapper">
+                <input type="text" placeholder="To search …" />
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
 
           <!-- Custom Hamburger Icon -->
           <div id="hamburger" class="cursor-pointer" title="Menu">
