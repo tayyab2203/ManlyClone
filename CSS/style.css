@@ -430,12 +430,12 @@ img.footer-logo {
 }
 @media (max-width: 576px) { /* Bootstrap's mobile breakpoint */
   .featured-label {
-    bottom: 140px;
+    bottom: 160px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .featured-label {
-    bottom: 125px;
+    bottom: 90px;
   }
 }
 
